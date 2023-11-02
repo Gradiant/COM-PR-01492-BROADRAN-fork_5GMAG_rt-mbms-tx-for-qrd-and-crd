@@ -63,7 +63,7 @@ Found device 2
 
 ## Downloading
 ````
-git clone --recurse-submodules -b qrd-tx https://github.com/5G-MAG/rt-mbms-tx-for-qrd-and-crd.git
+git clone --recurse-submodules https://github.com/5G-MAG/rt-mbms-tx-for-qrd-and-crd.git
 
 cd rt-mbms-tx-for-qrd-and-crd
 
@@ -76,6 +76,7 @@ mkdir build && cd build
 ``
 cmake -DCMAKE_INSTALL_PREFIX=/usr -GNinja ..
 ``
+
 ``
 ninja
 ``
