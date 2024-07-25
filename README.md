@@ -39,7 +39,9 @@ sudo apt install soapysdr-module-bladerf
 ````
 Finally, install the BladeRF firmware:
 ````
-sudo bladeRF-install-firmware
+sudo add-apt-repository ppa:nuandllc/bladerf
+sudo apt-get update
+sudo apt-get install bladerf
 ````
 
 ### Check SDR availability
@@ -65,27 +67,21 @@ Found device 2
 ## Downloading
 ````
 git clone --recurse-submodules https://github.com/5G-MAG/rt-mbms-tx-for-qrd-and-crd.git
-
 cd rt-mbms-tx-for-qrd-and-crd
-
 git submodule update
-
 mkdir build && cd build
 ````
 
 ## Building
-``
+````
 cmake -DCMAKE_INSTALL_PREFIX=/usr -GNinja ..
-``
-
-``
 ninja
-``
+````
 
 ## Installing
-``
+````
 sudo ninja install
-``
+````
 
 ## Configuration after installation
 Install the configuration:
